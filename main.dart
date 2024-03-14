@@ -99,7 +99,6 @@ class User {
     }
   }
 
-  // Method to send attachment asynchronously
   Future<void> _sendAttachment(Attachment attachment) {
     return Future.delayed(Duration(seconds: attachment.size), () {
       stdout.write("$_name($_phoneNumber) : ");
